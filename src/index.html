@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
+        <title>Kwrap - Password Manager</title>
+        <meta name="description" content="Simple and secure password manager" />
+        <meta name="keywords" content="Kwrap, Password, password-manager" />
+        <link rel="icon" type="image/svg+xml" href="/logo.svg" />
+        <link rel="stylesheet" href="./styles/tailwind.css" />
+    </head>
+    <body class="dark:bg-body">
+        <header class="container max-w-6xl px-5 h-20 flex items-center justify-between">
+            <a href="/" class="flex items-center hover:opacity-90">
+                <img class="w-10 mr-3 rounded-md" src="/logo.svg" alt="Logo" title="Logo" />
+                <p class="text-lg text-gray-800 dark:text-gray-100">Kwrap</p>
+            </a>
+            <a href="https://github.com/kwrap">
+                <svg
+                    class="w-6 h-6 fill-black dark:fill-white hover:opacity-80"
+                    viewBox="0 0 16 16"
+                >
+                    <path
+                        d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"
+                    ></path>
+                </svg>
+            </a>
+        </header>
+
+        <div class="pt-6 text-center">
+            <p class="text-gray-800 dark:text-gray-100 text-7xl font-extralight">Simple</p>
+            <p class="text-gray-800 dark:text-gray-100 text-8xl font-light">Secure</p>
+            <p class="text-gray-500 dark:text-gray-300 my-3 text-3xl font-light">
+                password manager
+            </p>
+        </div>
+
+        <div
+            class="mt-20 px-5 flex justify-center items-center flex-col sm:flex-row gap-5 sm:gap-9"
+        >
+            <a
+                class="w-full sm:w-52 h-12 flex justify-center items-center bg-theme rounded-md text-white border-2 border-[#2273dd] active-click"
+                href="#download"
+                >Get Started</a
+            >
+            <a
+                class="w-full sm:w-52 h-12 flex justify-center items-center bg-transparent rounded-md border-2 border-theme text-theme active-click"
+                href="https://web.kwrap.app"
+                target="_blank"
+            >
+                Try Now
+                <sup class="ml-1 text-[10px]">Web</sup>
+            </a>
+        </div>
+
+        <h2 class="flex justify-center items-center gap-2 py-20">
+            <svg
+                class="w-8 h-8 text-red-600"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+                stroke-width="2"
+            >
+                <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z"
+                />
+            </svg>
+            <span class="text-3xl text-gray-800 dark:text-white">Preview</span>
+        </h2>
+
+        <div
+            class="container max-w-6xl px-5 py-8 bg-gray-100 dark:bg-light rounded-lg overflow-x-auto flex gap-5"
+        >
+            <div class="flex flex-col items-center gap-5">
+                <h3 class="text-lg text-gray-800 dark:text-white">iOS</h3>
+                <div class="w-72 h-96 bg-gray-200 dark:bg-body rounded-lg"></div>
+            </div>
+            <div class="flex flex-col items-center gap-5">
+                <h3 class="text-lg text-gray-800 dark:text-white">iPad</h3>
+                <div class="w-72 h-96 bg-gray-200 dark:bg-body rounded-lg"></div>
+            </div>
+            <div class="flex flex-col items-center gap-5">
+                <h3 class="text-lg text-gray-800 dark:text-white">macOS</h3>
+                <div class="w-72 h-96 bg-gray-200 dark:bg-body rounded-lg"></div>
+            </div>
+            <div class="flex flex-col items-center gap-5">
+                <h3 class="text-lg text-gray-800 dark:text-white">Command Line</h3>
+                <div class="w-72 h-96 bg-gray-200 dark:bg-body rounded-lg"></div>
+            </div>
+        </div>
+
+        <h2 class="flex justify-center items-center gap-2 py-20">
+            <svg
+                class="w-8 h-8 text-yellow-400"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+            >
+                <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"
+                />
+            </svg>
+            <span class="text-3xl text-gray-800 dark:text-white">Features</span>
+        </h2>
+
+        <div
+            class="container max-w-6xl px-5 grid gap-x-8 gap-y-10 grid-cols-1 sm:grid-cols-2 md:grid-cols-3"
+        >
+            <div class="sm:p-4 rounded transition sm:hover:bg-gray-100 dark:sm:hover:bg-light">
+                <div class="flex items-center gap-2">
+                    <svg
+                        class="h-6 w-6 text-red-600"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke="currentColor"
+                        stroke-width="2"
+                    >
+                        <path
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            d="M13 10V3L4 14h7v7l9-11h-7z"
+                        />
+                    </svg>
+                    <h3 class="text-lg text-gray-800 dark:text-white">Simple</h3>
+                </div>
+                <p class="text-sm text-gray-600 dark:text-gray-300 mt-2">
+                    No extra features, just focus on storing passwords
+                </p>
+            </div>
+            <div class="sm:p-4 rounded transition sm:hover:bg-gray-100 dark:sm:hover:bg-light">
+                <div class="flex items-center gap-2">
+                    <svg
+                        class="h-6 w-6 text-green-600"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke="currentColor"
+                        stroke-width="2"
+                    >
+                        <path
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z"
+                        />
+                    </svg>
+                    <h3 class="text-lg text-gray-800 dark:text-white">Security</h3>
+                </div>
+                <p class="text-sm text-gray-600 dark:text-gray-300 mt-2">
+                    Uses standard AES-GCM to encrypt data and does not trust the server
+                </p>
+            </div>
+            <div class="sm:p-4 rounded transition sm:hover:bg-gray-100 dark:sm:hover:bg-light">
+                <div class="flex items-center gap-2">
+                    <svg
+                        class="h-6 w-6 text-blue-600"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                    >
+                        <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
+                        <line x1="8" y1="21" x2="16" y2="21"></line>
+                        <line x1="12" y1="17" x2="12" y2="21"></line>
+                    </svg>
+                    <h3 class="text-lg text-gray-800 dark:text-white">Cross Platform</h3>
+                </div>
+                <p class="text-sm text-gray-600 dark:text-gray-300 mt-2">
+                    Access your password library on multiple platforms
+                </p>
+            </div>
+            <div class="sm:p-4 rounded transition sm:hover:bg-gray-100 dark:sm:hover:bg-light">
+                <div class="flex items-center gap-2">
+                    <svg
+                        class="h-6 w-6 text-cyan-600"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke="currentColor"
+                        stroke-width="2"
+                    >
+                        <path
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            d="M8 9l3 3-3 3m5 0h3M5 20h14a2 2 0 002-2V6a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"
+                        />
+                    </svg>
+                    <h3 class="text-lg text-gray-800 dark:text-white">Open Source</h3>
+                </div>
+                <p class="text-sm text-gray-600 dark:text-gray-300 mt-2">
+                    All of Kwrap's code is open source and can be reviewed and improved at any time
+                </p>
+            </div>
+            <div class="sm:p-4 rounded transition sm:hover:bg-gray-100 dark:sm:hover:bg-light">
+                <div class="flex items-center gap-2">
+                    <svg
+                        class="h-6 w-6 text-purple-600"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke="currentColor"
+                        stroke-width="2"
+                    >
+                        <path
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            d="M18.364 5.636a9 9 0 010 12.728m0 0l-2.829-2.829m2.829 2.829L21 21M15.536 8.464a5 5 0 010 7.072m0 0l-2.829-2.829m-4.243 2.829a4.978 4.978 0 01-1.414-2.83m-1.414 5.658a9 9 0 01-2.167-9.238m7.824 2.167a1 1 0 111.414 1.414m-1.414-1.414L3 3m8.293 8.293l1.414 1.414"
+                        />
+                    </svg>
+                    <h3 class="text-lg text-gray-800 dark:text-white">Offline access</h3>
+                </div>
+                <p class="text-sm text-gray-600 dark:text-gray-300 mt-2">
+                    Does not require any network requests, only uses local files to store passwords
+                </p>
+            </div>
+            <div class="sm:p-4 rounded transition sm:hover:bg-gray-100 dark:sm:hover:bg-light">
+                <div class="flex items-center gap-2">
+                    <svg
+                        class="h-6 w-6 text-yellow-400"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke="currentColor"
+                        stroke-width="2"
+                    >
+                        <path
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            d="M4 7v10c0 2.21 3.582 4 8 4s8-1.79 8-4V7M4 7c0 2.21 3.582 4 8 4s8-1.79 8-4M4 7c0-2.21 3.582-4 8-4s8 1.79 8 4m0 5c0 2.21-3.582 4-8 4s-8-1.79-8-4"
+                        />
+                    </svg>
+                    <h3 class="text-lg text-gray-800 dark:text-white">Self-hosting</h3>
+                </div>
+                <p class="text-sm text-gray-600 dark:text-gray-300 mt-2">
+                    Use Kwrap Server to store passwords and keep them in sync across all platforms
+                </p>
+            </div>
+        </div>
+
+        <h2 id="download" class="flex justify-center items-center gap-2 py-20">
+            <svg class="w-8 h-8 text-theme" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"
+                />
+            </svg>
+            <span class="text-3xl text-gray-800 dark:text-white">Downloads</span>
+        </h2>
+
+        <div class="container max-w-6xl px-5 grid gap-3 sm:gap-5 grid-cols-1 sm:grid-cols-2">
+            <div class="bg-gray-100 dark:bg-light rounded-lg p-4 flex gap-4">
+                <div class="w-16 aspect-square bg-gray-200 dark:bg-body rounded-md"></div>
+                <div class="flex-1">
+                    <h3 class="text-lg text-gray-800 dark:text-white">Windows</h3>
+                </div>
+            </div>
+            <div class="bg-gray-100 dark:bg-light rounded-lg p-4 flex gap-4">
+                <div class="w-16 aspect-square bg-gray-200 dark:bg-body rounded-md"></div>
+                <div class="flex-1">
+                    <h3 class="text-lg text-gray-800 dark:text-white">macOS</h3>
+                </div>
+            </div>
+            <div class="bg-gray-100 dark:bg-light rounded-lg p-4 flex gap-4">
+                <div class="w-16 aspect-square bg-gray-200 dark:bg-body rounded-md"></div>
+                <div class="flex-1">
+                    <h3 class="text-lg text-gray-800 dark:text-white">Linux</h3>
+                </div>
+            </div>
+            <div class="bg-gray-100 dark:bg-light rounded-lg p-4 flex gap-4">
+                <div class="w-16 aspect-square bg-gray-200 dark:bg-body rounded-md"></div>
+                <div class="flex-1">
+                    <h3 class="text-lg text-gray-800 dark:text-white">iOS</h3>
+                </div>
+            </div>
+            <div class="bg-gray-100 dark:bg-light rounded-lg p-4 flex gap-4">
+                <div class="w-16 aspect-square bg-gray-200 dark:bg-body rounded-md"></div>
+                <div class="flex-1">
+                    <h3 class="text-lg text-gray-800 dark:text-white">Android</h3>
+                </div>
+            </div>
+            <div class="bg-gray-100 dark:bg-light rounded-lg p-4 flex gap-4">
+                <div class="w-16 aspect-square bg-gray-200 dark:bg-body rounded-md"></div>
+                <div class="flex-1">
+                    <h3 class="text-lg text-gray-800 dark:text-white">Command Line</h3>
+                </div>
+            </div>
+            <div class="bg-gray-100 dark:bg-light rounded-lg p-4 flex gap-4">
+                <div class="w-16 aspect-square bg-gray-200 dark:bg-body rounded-md"></div>
+                <div class="flex-1">
+                    <h3 class="text-lg text-gray-800 dark:text-white">Web App</h3>
+                </div>
+            </div>
+            <div class="bg-gray-100 dark:bg-light rounded-lg p-4 flex gap-4">
+                <div class="w-16 aspect-square bg-gray-200 dark:bg-body rounded-md"></div>
+                <div class="flex-1">
+                    <h3 class="text-lg text-gray-800 dark:text-white">Browser extension</h3>
+                </div>
+            </div>
+        </div>
+
+        <footer
+            class="flex items-center mt-20 py-10 border-t border-gray-100 dark:border-light gap-6 text-sm"
+        ></footer>
+    </body>
+</html>

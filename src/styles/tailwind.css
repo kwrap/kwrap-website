@@ -1,0 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.active-click {
+    @apply transition-all active:scale-95 hover:opacity-90;
+}

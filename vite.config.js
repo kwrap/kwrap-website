@@ -1,6 +1,7 @@
+import { resolve } from 'path'
 import { createHtmlPlugin } from 'vite-plugin-html'
 
-export default ({ command }) => {
+export default () => {
     return {
         server: {
             host: true,
@@ -12,12 +13,11 @@ export default ({ command }) => {
             outDir: '../dist/',
             emptyOutDir: true,
             target: 'esnext',
-            assetsInlineLimit: 0,
             rollupOptions: {
                 input: {
-                    index: './src/index.html',
-                    privacy: './src/privacy.html',
-                    404: './src/404.html'
+                    index: resolve(__dirname, './src/index.html'),
+                    privacy: resolve(__dirname, './src/privacy.html'),
+                    404: resolve(__dirname, './src/404.html')
                 },
                 output: {
                     entryFileNames: '[name]-[hash].js',
@@ -26,6 +26,6 @@ export default ({ command }) => {
                 }
             }
         },
-        plugins: command === 'build' ? [createHtmlPlugin()] : []
+        plugins: [createHtmlPlugin()]
     }
 }
